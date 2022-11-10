@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Megan Moore | Frontend Dev II Notes</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="divider">
+        <div class="logo">
+          <img src="" alt="my logo image" />
+          <a href="../index.html"> Megan<span class="highlight">Moore</span></a>
+        </div>
+
+<h1>Lesson 3</h1>
+<div class="row">
+  <div class="col">
+    <h2>The Window Object</h2>
+    <div class="tabs">
+      <div class="tab">
+        <input type="checkbox" id="chck1">
+        <label class="tab-label" for="chck1">Item 1</label>
+        <div class="tab-content">
+            <p>"The window object = the browser window that contains a web page<br><br>
+
+            <h3>The Browser Object Model (BOM)</h3>
+            <p>• a collection of properties and methods that contain information about the browser and computer screen.<br>
+            • Every browser window, tab, popup, frame, and iframe has a window object.<br><br>
+            
+            <em>* BOM only makes since in a browser environment, not in Node.js.*</em><br>
+            * If you don't know the name of the global object, use this:</p>
+            
+            <p class="code"><em>// from within the global scope</em><br>
+            const global = this</p><br><br>
+            
+            <p>• Global variables are actual properties of a global object<br>
+            • refer to global variables without using the window object</p><br><br>
+            
+            <p><p class="code">parseInt()</p> and <p class="code"></p>isNaN()</p> are methods of a global object:</p>
+            <p class="code">window.parseInt(4.2);
+            -- 4
+            
+            window.isNaN(4.2);
+            -- false</p>
+            <p><em>**ES6 made both of these methods of the number object</em></p>
+            
+            <h3>Dialogs</h3>
+            <p>• <p class="code">window.alert('Hello');</p><p> : will pause the execution of the 
+                program and display a message in a dialogue box. the message is provided as an 
+                argument to the method, and undefined is returned.</p>
+                <p>• <p class="code">window.confirm('Do you wish to continue?')</p><p> : program execution is paused and the message
+             provided as an argument displays in a confirmation dialogue with the options of OK or 
+             Cancel. </p><p class="code"> OK = true | | Cancel = false</p>
+             <p>• <p class="code">window.prompt('Please enter your name:');</p><p> : stops execution,
+              message is the argument. Input field is provided and the text is returned as a string when OK is clicked. 
+              Cancel = </p><p class="code">null.</p>
+            
+            <p><bold>Use with care:</bold>
+             - these methods with stop the execution of the program.<br>
+             - use as a final check<br>
+             - most browsers allow the user to disable dialogs, so they cannot be relied upon.</p>
+        </div>
+      </div>
+      <div class="tab">
+        <input type="checkbox" id="chck2">
+        <label class="tab-label" for="chck2">Item 2</label>
+        <div class="tab-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
